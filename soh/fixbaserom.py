@@ -5,6 +5,8 @@ import hashlib
 
 
 def get_str_hash(byte_array):
+    """    """
+
     return str(hashlib.md5(byte_array).hexdigest())
 
 
@@ -20,6 +22,8 @@ if path.exists("baserom_non_mq.z64"):
 romFileExtensions = ["z64", "n64", "v64"]
 
 def find_baserom_original():
+    """    """
+
     for romFileExtLower in romFileExtensions:
         for romFileExt in (romFileExtLower, romFileExtLower.upper()):
             romFileNameCandidate = "baserom_original_non_mq." + romFileExt
